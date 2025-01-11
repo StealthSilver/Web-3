@@ -1,0 +1,9 @@
+THE BITCOIN WHITEPAPER
+
+1. The first crypto, making a decentralized bank based upon computation power
+2. Completely non reversible transactions are not possible 
+3. For freelancers the money is kept in a escro account intermediately
+4. Proof of work is hte criteria for establishing a secure chain
+5. the average work required is exponential but verfying is really fast
+6. As later blocks are chained then any change in the intermediate block will make the later blocks invalid.
+7. The hardware capability can be surpassed with the difficulty of the proof of work
