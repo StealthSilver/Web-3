@@ -2,10 +2,7 @@
 
 const crypto = require("crypto");
 
-let prefix = "pogo";
-let noance = 0;
-
-let input = prefix + toString(noance);
+let input = 0;
 let output = "";
 
 while (true) {

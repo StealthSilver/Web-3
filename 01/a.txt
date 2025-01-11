@@ -20,3 +20,9 @@ const hash = crypto.createHash('sha256').update(input).digest("hex");
 
 sha256 -> hashing algorithm
 hex -> encoding (after this the 256 character string will get a 64 character string)
+
+TRANSACTION IN THE BLOCKCHAIN
+
+the bitcoin node aggregates the transactions
+the miners find the noance for the transactions (proof of work)
+the miners broadcast the transaction on the complete chain
