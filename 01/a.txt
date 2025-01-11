@@ -1,0 +1,22 @@
+COHORT 
+
+NEED FOR CRYPTO
+1. After the barter system. The money is controlled by the govt.
+2. The inflation is rising day by day as govt. can't be trusted, we cannot trust currency controlled by a central authority.
+3. Banks use fractonal reserve banking and they go down e.g. Silicon Valley Bank
+
+HASHING 
+string -> hashing function -> hash (can't be reversed)
+
+1. deterministic
+2. fast computition
+3. pre-image resistant
+4. small chnages correspond to large chnages
+5. collision resistant 
+
+JS crypto library
+
+const hash = crypto.createHash('sha256').update(input).digest("hex");
+
+sha256 -> hashing algorithm
+hex -> encoding (after this the 256 character string will get a 64 character string)
