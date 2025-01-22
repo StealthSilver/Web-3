@@ -1,0 +1,6 @@
+BANKS vs BLOCKCHAINS
+
+in banks after the username and password signin we can 
+1. see balance
+2. transfer money
+3. recieve money
