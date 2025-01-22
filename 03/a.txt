@@ -4,3 +4,16 @@ in banks after the username and password signin we can
 1. see balance
 2. transfer money
 3. recieve money
+
+in blockchains if we want to create a wallet:
+"not your keys, not your cryoto"
+
+we need to have a public private key pair
+
+1. public key cna be shared to everyone and it can be used to track the balances (solscan.io)
+2. private key is a secret string it must not be shared 
+
+
+private key is just an array of 32 bytes 
+[122, 232, 008, 231..... 32 times]
+
