@@ -27,6 +27,6 @@ the public keys in solana are stored in base 58 encoding
 
 there are different types of encodings 
 1. ASCII
-2. HEX (4 bits at a time)
-3. 
+2. HEX (4 bits at a time) [0 ,1, 2 .... A, B ,C ,D ,E ,F] (base 16 encoding)
+3. BASE 64 (a-z , A-Z, + , /) (64 characters)
 4.
