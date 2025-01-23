@@ -15,5 +15,11 @@ we need to have a public private key pair
 
 
 private key is just an array of 32 bytes 
-[122, 232, 008, 231..... 32 times]
+[122, 232, 008, 231..... 32 times] -> (converted into a string)
+
+ENCODING 
+
+every byte from 0 to 255 represents a character
+
+the public keys in solana ae stored in base 58 encoding
 
