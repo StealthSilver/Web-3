@@ -30,3 +30,5 @@ there are different types of encodings
 2. HEX (4 bits at a time) [0 ,1, 2 .... A, B ,C ,D ,E ,F] (base 16 encoding)
 3. BASE 64 (a-z , A-Z, + , /) (64 characters) (6 characters at a time) 
 4. BASE 58, all elements from base 64  but dosent include (I , O , l , 0, + , /) as they look simmilar
+
+the solana address are written in base 58
