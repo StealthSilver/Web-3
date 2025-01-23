@@ -9,9 +9,11 @@ in blockchains if we want to create a wallet:
 "not your keys, not your cryoto"
 
 we need to have a public private key pair
+with every public key there is an associated private key
 
-1. public key cna be shared to everyone and it can be used to track the balances (solscan.io)
-2. private key is a secret string it must not be shared 
+
+1. public key can be shared to everyone and it can be used to track the balances (solscan.io), to recieve the money only public key is required
+2. private key is a secret string it must not be shared, for sending money private key is also required
 
 
 private key is just an array of 32 bytes 
