@@ -23,5 +23,6 @@ ENCODING
 
 every byte from 0 to 255 represents a character
 
-the public keys in solana ae stored in base 58 encoding
+the public keys in solana are stored in base 58 encoding
+
 
