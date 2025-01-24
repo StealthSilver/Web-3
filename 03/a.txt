@@ -93,3 +93,8 @@ HD WALLETS
 1. you can get a 12 string(mnemonic) used to create a seed which can be used to get all the public - private key pairs
 2. the public - private key pairs can be determined from the seed phase using the derivation path
 3. addresses of different coins can be generated from the master seed phase
+
+
+0 -> BITCOIN 
+60 -> ETHYRIUM 
+501 -> SOLANA 
