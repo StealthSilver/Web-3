@@ -1,102 +1,98 @@
+
 BANKS vs BLOCKCHAINS
 
-in banks after the username and password signin we can 
-1. see balance
-2. transfer money
-3. recieve money
+BANKS:
+In a traditional bank, after signing in with your username and password, you can:
+1. View your balance.
+2. Transfer money.
+3. Receive money.
 
-in blockchains if we want to create a wallet:
-"not your keys, not your cryoto"
+BLOCKCHAINS:
+When creating a wallet in blockchain, the phrase "Not your keys, not your crypto" applies. You need to have a public-private key pair.
 
-we need to have a public private key pair
-with every public key there is an associated private key
+- Public Key: 
+  - This can be shared with anyone and is used to track the balance (e.g., through solscan.io). 
+  - It's only needed to receive money.
+  
+- Private Key: 
+  - A secret string that must never be shared. 
+  - It is required to send money.
 
+A private key is essentially an array of 32 bytes, for example:
+[122, 232, 8, 231, ...] (32 values) -> converted into a string.
 
-1. public key can be shared to everyone and it can be used to track the balances (solscan.io), to recieve the money only public key is required
-2. private key is a secret string it must not be shared, for sending money private key is also required
+ENCODING:
+Each byte (ranging from 0 to 255) represents a character.
 
+Public keys in Solana are stored in Base 58 encoding.
 
-private key is just an array of 32 bytes 
-[122, 232, 008, 231..... 32 times] -> (converted into a string)
+There are different types of encodings:
+1. ASCII: Standard character encoding.
+2. HEX (Base 16): Uses characters [0, 1, 2, ..., A, B, C, ..., F]. (4 bits per character)
+3. BASE 64: Uses characters [a-z, A-Z, +, /]. (6 bits per character)
+4. BASE 58: Uses characters from Base 64 but excludes [I, O, l, 0, +, /] to avoid confusion.
 
-ENCODING 
+Solana addresses are written in Base 58.
 
-every byte from 0 to 255 represents a character
+HASHING vs ENCRYPTION:
 
-the public keys in solana are stored in base 58 encoding
+- HASHING:
+  - A string is passed through a hashing function to generate a hash (which cannot be reversed).
 
-there are different types of encodings 
-1. ASCII
-2. HEX (4 bits at a time) [0 ,1, 2 .... A, B ,C ,D ,E ,F] (base 16 encoding)
-3. BASE 64 (a-z , A-Z, + , /) (64 characters) (6 characters at a time) 
-4. BASE 58, all elements from base 64  but dosent include (I , O , l , 0, + , /) as they look simmilar
+- ENCRYPTION:
+  - Encryption is a process where a string is encoded in a way that can later be decoded (decrypted).
 
-the solana address are written in base 58
+  string -> (encryption + key) -> encrypted message -> (decryption + key) -> string
 
-HASHING vs ENCRYPTION
+ASYMMETRIC ENCRYPTION IN BLOCKCHAIN:
+In blockchain, encryption is asymmetric, meaning the keys for encryption and decryption are different. 
+- Private Key: Used for encryption.
+- Public Key: Used for decryption.
 
-string -> hashing function -> hash (can't be reversed)
+KEY PAIR (Public-Private):
+The public-private key pair is mathematically related but cannot be derived from each other. You can derive the public key from the private key, but you cannot derive the private key from the public key.
 
-encryption is a process od coding that can be decoded (dcrypted)
+COMMON ASYMMETRIC ENCRYPTION ALGORITHMS:
+1. RSA: Rivest-Shamir-Adleman
+2. ECC (ECDSA): Elliptic Curve Cryptography (used in Ethereum and Bitcoin)
+3. EdDSA: Edward-curve Digital Signature Algorithm (used in Solana)
 
-string -> (encryption + key) -> encrypted message -> (decryption + key) -> string 
+USE CASES OF PUBLIC KEY CRYPTOGRAPHY:
+1. SSL/TLS certificates for secure connections.
+2. SSH keys for server access (e.g., push to GitHub).
+3. Blockchains and cryptocurrencies.
 
-in the blockchain the encryption is asymmetric, which means that the key for encryption and decryption are different
-for the encryption we use the privte key and for the decryption public key is used 
+STEPS IN PUBLIC KEY CRYPTOGRAPHY:
+1. Create a public-private key pair.
+2. Define the message to sign.
+3. Convert the message into a Uint8Array.
+4. Sign the message using the private key.
+5. Verify the message using the public key.
 
-therefore for asymmetric encryption (public key cryptographic) a public, private key pair is required
+TRANSACTIONS:
+USER SIDE:
+1. Create a public/private key pair.
+2. Create a transaction.
+3. Hash the transaction.
+4. Sign the transaction with the private key.
+5. Send the raw transaction, signature, and public key to the blockchain node.
 
-the key pair is mathematically related but cannot be derived from each other
+MINER SIDE:
+1. Hashes the original message.
+2. Verifies the signature.
+3. Validates the transaction.
+4. Broadcasts the transaction on the blockchain.
 
-we can derive the public key from the privbate key but the opposite is not true
+HD WALLETS:
+1. A 12-word mnemonic phrase is used to create a seed, which can be used to generate all public-private key pairs.
+2. Public-private key pairs can be derived from the seed phrase using a derivation path.
+3. Wallets for different cryptocurrencies can be generated from the same master seed phrase.
+- 0: Bitcoin
+- 60: Ethereum
+- 501: Solana
 
-Commonly available asymm encryption algorithms :
-
-1. RSA : Rivest-Shamir-Adleman
-2. ECC : Elliptic Curve Cryptography (ECDSA) - ETH and BTC 
-3. EdDSA - Edward-curve Digital Signature Algorithm - SOL
-
-usecases of public key cryptography 
-
-1. SSL/TLS certificates
-2. SSH keys to connect to servers/push to github
-3. Blockchains and cryptocurrenies
-
-Public Key Cryptography
-
-1. Create a public-private key pair
-2. Define the message to sign
-3. Convert message in UInt8Array 
-4. Sign the message using the private key 
-5. Verify the message using the public key
-
-
-TRANSACTIONS 
-
-USER SIDE 
-
-1. create a public / private key pair 
-2. create a trasaction 
-3. hash the transaction 
-4. sign the transaction with the private key 
-5. send the raw transaction , signature and the public key to the node on blockchain 
-
-MINER 
-
-1. hashes the original message 
-2. verifies the signature 
-3. Transaction validation 
-4. Broadcasts on the chain
-
-HD WALLETS 
-
-1. you can get a 12 string(mnemonic) used to create a seed which can be used to get all the public - private key pairs
-2. the public - private key pairs can be determined from the seed phase using the derivation path
-3. addresses of different coins can be generated from the master seed phase
-
-
-0 -> BITCOIN 
-60 -> ETHYRIUM 
-501 -> SOLANA 
-
-WALLET ORGANIZERS -> PHANTOM , BAGPACK, METAMASK
+WALLET ORGANIZERS:
+Popular wallet organizers include:
+- Phantom
+- Backpack
+- MetaMask
