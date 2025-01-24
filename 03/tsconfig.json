@@ -1,13 +1,24 @@
 {
   "compilerOptions": {
-    "module": "ESNext",       // Use ES module syntax
-    "target": "ES2020",       // Use modern JavaScript features
-    "esModuleInterop": true, // Allow compatibility with CommonJS
-    "moduleResolution": "Node", // Node.js-style resolution
+    "module": "ESNext",                // Use ES module syntax
+    "target": "ES2020",                // Use modern JavaScript features
+    "esModuleInterop": true,           // Allow compatibility with CommonJS modules
+    "moduleResolution": "Node",        // Resolve modules like Node.js
     "allowSyntheticDefaultImports": true,
-    "strict": true            // Enable strict type checking
+    "strict": true,                    // Enable strict type-checking
+    "skipLibCheck": true,              // Skip type checking of declaration files (speeds up compilation)
+    "forceConsistentCasingInFileNames": true,  // Ensures consistent casing in file names
+    "resolveJsonModule": true          // Allows importing JSON files as modules
   },
   "ts-node": {
-    "esm": true               // Enable ES module support in ts-node
-  }
+    "esm": true,                       // Enable ES module support in ts-node
+    "transpileOnly": true              // Disable type checking for faster transpiling
+  },
+  "include": [
+    "src/**/*.ts",                     // Include all TypeScript files in the 'src' folder
+    "08.ts"                            // Include your script file here
+  ],
+  "exclude": [
+    "node_modules"                     // Exclude node_modules from compilation
+  ]
 }
