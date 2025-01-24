@@ -48,6 +48,8 @@ therefore for asymmetric encryption (public key cryptographic) a public, private
 
 the key pair is mathematically related but cannot be derived from each other
 
+we can derive the public key from the privbate key but the opposite is not true
+
 Commonly available asymm encryption algorithms :
 
 1. RSA : Rivest-Shamir-Adleman
@@ -58,4 +60,12 @@ usecases of public key cryptography
 
 1. SSL/TLS certificates
 2. SSH keys to connect to servers/push to github
-3. Blockchains and cryptocurreniesw
+3. Blockchains and cryptocurrenies
+
+Public Key Cryptography
+
+1. Create a public-private key pair
+2. 
+3.
+4.
+5.
