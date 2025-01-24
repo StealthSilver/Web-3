@@ -35,3 +35,9 @@ the solana address are written in base 58
 
 HASHING vs ENCRYPTION
 
+string -> hashing function -> hash (can't be reversed)
+
+encryption is a process od coding that can be decoded (dcrypted)
+
+string -> (encryption + key) -> encrypted message -> (decryption + key) -> string 
+
