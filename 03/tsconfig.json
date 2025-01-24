@@ -1,14 +1,11 @@
 {
   "compilerOptions": {
-    "module": "ESNext",                // Use ES module syntax
-    "target": "ES2020",                // Use modern JavaScript features
-    "esModuleInterop": true,           // Allow compatibility with CommonJS modules
-    "moduleResolution": "Node",        // Resolve modules like Node.js
+    "module": "ESNext",  // Use ES module syntax
+    "target": "ES2020",  // Use modern JavaScript features
+    "esModuleInterop": true, // Allow compatibility with CommonJS
+    "moduleResolution": "Node", // Resolve modules like Node.js
     "allowSyntheticDefaultImports": true,
-    "strict": true,                    // Enable strict type-checking
-    "skipLibCheck": true,              // Skip type checking of declaration files (speeds up compilation)
-    "forceConsistentCasingInFileNames": true,  // Ensures consistent casing in file names
-    "resolveJsonModule": true          // Allows importing JSON files as modules
+    "strict": true         // Enable strict type-checking
   },
   "ts-node": {
     "esm": true,                       // Enable ES module support in ts-node

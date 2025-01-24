@@ -18,8 +18,7 @@
     "build": "tsc"
   },
   "ts-node": {
-    "esm": true,
-    "transpileOnly": true
+    "esm": true
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
