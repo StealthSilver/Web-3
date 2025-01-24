@@ -44,4 +44,6 @@ string -> (encryption + key) -> encrypted message -> (decryption + key) -> strin
 in the blockchain the encryption is asymmetric, which means that the key for encryption and decryption are different
 for the encryption we use the privte key and for the decryption public key is used 
 
-therefore for asymmetric encryption a public, private key pair is required
+therefore for asymmetric encryption (public key cryptographic) a public, private key pair is required
+
+the key pair is mathematically related but cannot be derived from each other
