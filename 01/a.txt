@@ -8,6 +8,8 @@ NEED FOR CRYPTO
 HASHING 
 string -> hashing function -> hash (can't be reversed)
 
+Algorithms for Hashing -> SHA-256 , MD-5
+
 1. deterministic
 2. fast computition
 3. pre-image resistant
