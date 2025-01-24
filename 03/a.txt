@@ -87,3 +87,7 @@ MINER
 2. verifies the signature 
 3. Transaction validation 
 4. Broadcasts on the chain
+
+HD WALLETS 
+
+1. you can get a 12 string(mnemonic) used to create a seed which can be used to get all the public - private key pairs
