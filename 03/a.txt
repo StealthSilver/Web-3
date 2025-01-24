@@ -32,3 +32,6 @@ there are different types of encodings
 4. BASE 58, all elements from base 64  but dosent include (I , O , l , 0, + , /) as they look simmilar
 
 the solana address are written in base 58
+
+HASHING vs ENCRYPTION
+
