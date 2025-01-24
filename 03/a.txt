@@ -71,3 +71,7 @@ Public Key Cryptography
 5. Verify the message using the public key
 
 
+TRANSACTIONS 
+
+1. we as the user signs the message
+2. the miner verifies the message
