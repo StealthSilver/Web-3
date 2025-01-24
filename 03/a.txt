@@ -53,3 +53,9 @@ Commonly available asymm encryption algorithms :
 1. RSA : Rivest-Shamir-Adleman
 2. ECC : Elliptic Curve Cryptography (ECDSA) - ETH and BTC 
 3. EdDSA - Edward-curve Digital Signature Algorithm - SOL
+
+usecases of public key cryptography 
+
+1. SSL/TLS certificates
+2. SSH keys to connect to servers/push to github
+3. Blockchains and cryptocurreniesw
