@@ -65,7 +65,7 @@ usecases of public key cryptography
 Public Key Cryptography
 
 1. Create a public-private key pair
-2. 
-3.
-4.
-5.
+2. Define the message to sign
+3. Convert message in UInt8Array 
+4. Sign the message using the private key 
+5. Verify the message using the public key
