@@ -73,5 +73,17 @@ Public Key Cryptography
 
 TRANSACTIONS 
 
-1. we as the user signs the message
-2. the miner verifies the message
+USER SIDE 
+
+1. create a public / private key pair 
+2. create a trasaction 
+3. hash the transaction 
+4. sign the transaction with the private key 
+5. send the raw transaction , signature and the public key to the node on blockchain 
+
+MINER 
+
+1. hashes the original message 
+2. verifies the signature 
+3. Transaction validation 
+4. Broadcasts on the chain
