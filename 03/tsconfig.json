@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",       // Use ES module syntax
+    "target": "ES2020",       // Use modern JavaScript features
+    "esModuleInterop": true, // Allow compatibility with CommonJS
+    "moduleResolution": "Node", // Node.js-style resolution
+    "allowSyntheticDefaultImports": true,
+    "strict": true            // Enable strict type checking
+  },
+  "ts-node": {
+    "esm": true               // Enable ES module support in ts-node
+  }
+}
