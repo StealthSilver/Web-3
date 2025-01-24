@@ -47,3 +47,9 @@ for the encryption we use the privte key and for the decryption public key is us
 therefore for asymmetric encryption (public key cryptographic) a public, private key pair is required
 
 the key pair is mathematically related but cannot be derived from each other
+
+Commonly available asymm encryption algorithms :
+
+1. RSA : Rivest-Shamir-Adleman
+2. ECC : Elliptic Curve Cryptography (ECDSA) - ETH and BTC 
+3. EdDSA - Edward-curve Digital Signature Algorithm - SOL
