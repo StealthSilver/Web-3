@@ -41,3 +41,7 @@ encryption is a process od coding that can be decoded (dcrypted)
 
 string -> (encryption + key) -> encrypted message -> (decryption + key) -> string 
 
+in the blockchain the encryption is asymmetric, which means that the key for encryption and decryption are different
+for the encryption we use the privte key and for the decryption public key is used 
+
+therefore for asymmetric encryption a public, private key pair is required
