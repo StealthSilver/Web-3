@@ -1,3 +1,5 @@
+// generating, signing and verifying the message
+
 import * as ed from "@noble/ed25519";
 
 async function main() {
